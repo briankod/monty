@@ -93,4 +93,4 @@ void instr_rotr(stack_t **stack, unsigned int line_number);
 void Stack(stack_t **stack, unsigned int line_number);
 void Queue(stack_t **stack, unsigned int line_number);
 
-#endif /* _MONTY_H */
+#endif /* _MONTY_H_ */
