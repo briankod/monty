@@ -5,7 +5,7 @@
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_add(stack_t **stack, unsigned int line_number)
 {
 	int temp;
@@ -26,7 +26,7 @@ void instr_add(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_sub(stack_t **stack, unsigned int line_number)
 {
 	int temp;
@@ -47,7 +47,7 @@ void instr_sub(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_div(stack_t **stack, unsigned int line_number)
 {
 	int temp;
@@ -72,7 +72,7 @@ void instr_div(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_mul(stack_t **stack, unsigned int line_number)
 {
 	int temp;
@@ -93,7 +93,7 @@ void instr_mul(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_mod(stack_t **stack, unsigned int line_number)
 {
 	int temp;

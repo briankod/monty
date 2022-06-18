@@ -5,7 +5,7 @@ global_t glob;
 /**
  * stack_st - starts the stack
  * @top: head of stack
- **/
+ */
 void stack_st(stack_t **top)
 {
 	*top = NULL;
@@ -15,7 +15,7 @@ void stack_st(stack_t **top)
 /**
  * freevery - frees memory allocated through malloc
  * Return: Nothing
- **/
+ */
 void freevery(void)
 {
 	stack_t *temp, *new_temp = NULL;

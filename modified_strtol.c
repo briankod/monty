@@ -5,7 +5,7 @@
  * @num_str: string with potential integer
  * @line_number: line number in bytecode file
  * Return: long int
- **/
+ */
 
 int mdf_strtol(char *num_str, unsigned int line_number)
 {

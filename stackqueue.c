@@ -5,7 +5,7 @@
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void Stack(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
@@ -18,7 +18,7 @@ void Stack(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void Queue(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;

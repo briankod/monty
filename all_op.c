@@ -6,7 +6,7 @@
  * @opr: operator, aka token[0] from getline
  * @line_number: line in byte-code file being processed, zero indexed
  * Return: int for mysterious purposes
- **/
+ */
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number)
 {
 	int i = 0;

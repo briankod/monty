@@ -47,7 +47,7 @@ typedef struct instruction_s
  * struct global_s - useful global variables
  * @top: double pointer to head of stack
  * @ops: double pointer to an instruction struct
-**/
+ */
 typedef struct global_s
 {
 	stack_t **top;

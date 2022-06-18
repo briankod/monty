@@ -5,7 +5,7 @@
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack, *newtop;
@@ -28,7 +28,7 @@ void instr_rotl(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_rotr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;

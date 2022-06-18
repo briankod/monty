@@ -5,7 +5,7 @@
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_nop(stack_t **stack, unsigned int line_number)
 {
 	(void)(stack);
@@ -17,7 +17,7 @@ void instr_nop(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
@@ -44,7 +44,7 @@ void instr_swap(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_pchar(stack_t **stack, unsigned int line_number)
 {
 	int i;
@@ -69,7 +69,7 @@ void instr_pchar(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;

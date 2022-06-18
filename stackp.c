@@ -5,7 +5,7 @@
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *item = malloc(sizeof(stack_t));
@@ -37,7 +37,7 @@ void instr_push(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *item = *stack;
@@ -55,7 +55,7 @@ void instr_pall(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_pint(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || *stack == NULL)
@@ -71,7 +71,7 @@ void instr_pint(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
  * Return: Nothing
- **/
+ */
 void instr_pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *item;
