@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <errno.h>
+#include <limits.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -53,6 +55,7 @@ extern global_t glob;
 int File_oper(char *Filename, stack_t **stack);
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number);
 void freevery(void);
+int mdf_strtol(char *num_str, unsigned int line_number);
 void instr_push(stack_t **stack, unsigned int line_number);
 void instr_pall(stack_t **stack, unsigned int line_number);
 void instr_pint(stack_t **stack, unsigned int line_number);

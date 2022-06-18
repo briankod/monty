@@ -23,7 +23,7 @@ void instr_push(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	value = atoi(opr);
+	value = mdf_strtol(opr, line_number);
 	item->n = value;
 	item->prev = NULL;
 	item->next = *stack;
