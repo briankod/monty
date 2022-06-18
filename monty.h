@@ -67,7 +67,7 @@ typedef struct variable_s
 	size_t sz;
 } variable_t;
 
-extern variable_t var;
+variable_t var;
 
 int File_oper(char *Filename, stack_t **stack);
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number);

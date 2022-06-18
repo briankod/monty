@@ -1,7 +1,5 @@
 #include "monty.h"
 
-variable_t var;
-
 /**
  * Stack - sets the format of the data to a stack (LIFO).
  * @stack: double pointer to head of stack
