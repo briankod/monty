@@ -26,6 +26,8 @@ void assign_opr(stack_t **stack, char *opr, unsigned int line_number)
 		{"pstr", instr_pstr},
 		{"rotl", instr_rotl},
 		{"rotr", instr_rotr},
+		{"stack", Stack},
+		{"queue", Queue},
 		{NULL, NULL}
 	};
 

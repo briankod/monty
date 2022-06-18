@@ -8,6 +8,10 @@
 #include <ctype.h>
 #include <errno.h>
 #include <limits.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -52,6 +56,19 @@ typedef struct global_s
 
 extern global_t glob;
 
+/**
+ * struct variable_s - variables to represent mode
+ * @queue: flag to show if in stack vs queue mode
+ * @sz: size of the stack
+ */
+typedef struct variable_s
+{
+	int queue;
+	size_t sz;
+} variable_t;
+
+extern variable_t var;
+
 int File_oper(char *Filename, stack_t **stack);
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number);
 void freevery(void);
@@ -71,5 +88,7 @@ void instr_pchar(stack_t **stack, unsigned int line_number);
 void instr_pstr(stack_t **stack, unsigned int line_number);
 void instr_rotl(stack_t **stack, unsigned int line_number);
 void instr_rotr(stack_t **stack, unsigned int line_number);
+void Stack(stack_t **stack, unsigned int line_number);
+void Queue(stack_t **stack, unsigned int line_number);
 
 #endif /* _MONTY_H */
