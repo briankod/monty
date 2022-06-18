@@ -71,9 +71,9 @@ typedef struct variable_s
 variable_t var;
 
 void stack_init(stack_t **head);
+void freevery(void);
 int File_oper(char *Filename, stack_t **stack);
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number);
-void freevery(void);
 int mdf_strtol(char *num_str, unsigned int line_number);
 void instr_push(stack_t **stack, unsigned int line_number);
 void instr_pall(stack_t **stack, unsigned int line_number);
