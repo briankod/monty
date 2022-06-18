@@ -4,6 +4,7 @@
  * instr_pint - prints the value at the top of the stack.
  * @stack: double pointer to head of stack
  * @line_number: line number in bytecode file
+ * Usage: pint
  * Return: Nothing
  */
 void instr_pint(stack_t **stack, unsigned int line_number)
