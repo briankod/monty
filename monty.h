@@ -1,5 +1,5 @@
-#ifndef _MONTY_H_
-#define _MONTY_H_
+#ifndef MONTY
+#define MONTY
 
 #define _GNU_SOURCE
 
@@ -93,4 +93,4 @@ void instr_rotr(stack_t **stack, unsigned int line_number);
 void Stack(stack_t **stack, unsigned int line_number);
 void Queue(stack_t **stack, unsigned int line_number);
 
-#endif /* _MONTY_H_ */
+#endif /* MONTY */
