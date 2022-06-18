@@ -69,6 +69,7 @@ typedef struct variable_s
 
 variable_t var;
 
+void stack_init(stack_t **head);
 int File_oper(char *Filename, stack_t **stack);
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number);
 void freevery(void);
