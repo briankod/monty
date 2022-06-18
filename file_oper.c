@@ -15,12 +15,12 @@ int File_oper(char *Filename, stack_t **stack)
 	FILE *fptr;
 	char *opr;
 
-	if (!Filename)
+	if (Filename == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", Filename);
 		exit(EXIT_FAILURE);
 	}
-	fptr = fopen(Filename, "r+");
+	fptr = fopen(Filename, "r");
 	if (fptr == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", Filename);
@@ -32,7 +32,7 @@ int File_oper(char *Filename, stack_t **stack)
 		opr = strtok(line, "\n\t\r ");
 		line_number++;
 		if (opr)
-		assign_opr(stack, opr, line_number);
+			assign_opr(stack, opr, line_number);
 	}
 	free(line);
 	fclose(fptr);
