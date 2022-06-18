@@ -12,7 +12,7 @@ void instr_push(stack_t **stack, unsigned int line_number)
 	char *opr;
 	int value;
 
-	if (item == NULL)
+	if (!item)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
