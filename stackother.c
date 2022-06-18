@@ -25,7 +25,7 @@ void instr_swap(stack_t **stack, unsigned int line_number)
 	(void)(line_number);
 	if (!(*stack) || !((*stack)->next))
 	{
-		printf("L%u: can't swap, stack too short\n", line_number);
+		fprintf(stderr, "L%u: can't swap, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	temp = (*stack)->next;
@@ -51,13 +51,13 @@ void instr_pchar(stack_t **stack, unsigned int line_number)
 
 	if (*stack == NULL)
 	{
-		printf("L%u: can't pchar, stack empty\n", line_number);
+		fprintf(stderr, "L%u: can't pchar, stack empty\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	i = (*stack)->n;
 	if (!(i >= 0 && i <= 127))
 	{
-		printf("L%u: can't pchar, value out of range", line_number);
+		fprintf(stderr, "L%u: can't pchar, value out of range", line_number);
 		exit(EXIT_FAILURE);
 	}
 	putchar(i);
