@@ -38,22 +38,35 @@ typedef struct instruction_s
 } instruction_t;
 
 /**
- * struct glob_s - globally useful variables, all rolled into one
- * @top: double pointer to top of stack
+ * struct global_s - useful global variables
+ * @top: double pointer to head of stack
  * @ops: double pointer to an instruction struct
 **/
-typedef struct glob_s
+typedef struct global_s
 {
 	stack_t **top;
 	instruction_t **ops;
-} glob_t;
+} global_t;
 
-extern glob_t glob;
+extern global_t glob;
 
 int File_oper(char *Filename, stack_t **stack);
 void assign_opr(stack_t **stack, char *opr, unsigned int line_number);
-void free_all(void);
+void freevery(void);
 void instr_push(stack_t **stack, unsigned int line_number);
 void instr_pall(stack_t **stack, unsigned int line_number);
+void instr_pint(stack_t **stack, unsigned int line_number);
+void instr_pop(stack_t **stack, unsigned int line_number);
+void instr_swap(stack_t **stack, unsigned int line_number);
+void instr_add(stack_t **stack, unsigned int line_number);
+void instr_nop(stack_t **stack, unsigned int line_number);
+void instr_sub(stack_t **stack, unsigned int line_number);
+void instr_div(stack_t **stack, unsigned int line_number);
+void instr_mul(stack_t **stack, unsigned int line_number);
+void instr_mod(stack_t **stack, unsigned int line_number);
+void instr_pchar(stack_t **stack, unsigned int line_number);
+void instr_pstr(stack_t **stack, unsigned int line_number);
+void instr_rotl(stack_t **stack, unsigned int line_number);
+void instr_rotr(stack_t **stack, unsigned int line_number);
 
 #endif /* _MONTY_H */

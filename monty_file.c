@@ -1,6 +1,6 @@
 #include "monty.h"
 
-glob_t glob;
+global_t glob;
 
 /**
  * stack_st - starts the stack
@@ -13,10 +13,10 @@ void stack_st(stack_t **top)
 }
 
 /**
- * free_all - frees memory allocated through malloc
+ * freevery - frees memory allocated through malloc
  * Return: Nothing
  **/
-void free_all(void)
+void freevery(void)
 {
 	stack_t *temp, *new_temp = NULL;
 

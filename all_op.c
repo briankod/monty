@@ -13,6 +13,19 @@ void assign_opr(stack_t **stack, char *opr, unsigned int line_number)
 	instruction_t all_ops[] = {
 		{"push", instr_push},
 		{"pall", instr_pall},
+		{"pint", instr_pint},
+		{"pop", instr_pop},
+		{"swap", instr_swap},
+		{"add", instr_add},
+		{"nop", instr_nop},
+		{"sub", instr_sub},
+		{"div", instr_div},
+		{"mul", instr_mul},
+		{"mod", instr_mod},
+		{"pchar", instr_pchar},
+		{"pstr", instr_pstr},
+		{"rotl", instr_rotl},
+		{"rotr", instr_rotr},
 		{NULL, NULL}
 	};
 

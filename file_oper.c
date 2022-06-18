@@ -26,7 +26,7 @@ int File_oper(char *Filename, stack_t **stack)
 		fprintf(stderr, "Error: Can't open file %s\n", Filename);
 		exit(EXIT_FAILURE);
 	}
-	atexit(free_all);
+	atexit(freevery);
 	while ((read = getline(&line, &len, fptr)) != -1)
 	{
 		opr = strtok(line, "\n\t\r ");
